@@ -58,3 +58,12 @@ section{
     margin-right: auto;
     width: 80%;
 }
+
+section.directory {
+	display: flex;
+}
+
+nav a {
+	margin-left: 5%;
+	margin-right: 5%;
+}
