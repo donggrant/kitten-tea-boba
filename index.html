@@ -13,10 +13,9 @@
 		<meta name="author" content="define author of the page -- your name">
 		<meta name="description" content="define a description of this page">
 		<meta name="keywords" content="define keywords for search engines">  
-
+ 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
-        crossorigin="anonymous">
+        rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
 	</head>  
 	<body class="index">
 		<header>
@@ -40,56 +39,201 @@
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-        </section>
+        </section> 
+
         <section class="directory">
-            <div class="card text-center" style="width: 18rem;">
-                <img class="card-img-top" src="images/cat1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Cat Gallery</h5>
-                  <a href="cat.html" class="btn btn-primary">See Selection</a>
+            <div class="container">
+              <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+                <div class="col">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="images/cat1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Cat Gallery</h5>
+                      <a href="cat.html" class="btn btn-primary">See Selection</a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="card text-center" style="width: 18rem;">
-                <img class="card-img-top" src="images/tea1.jfif" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Traditional Tea</h5>
-                  <a href="traditional.html" class="btn btn-primary">See Selection</a>
+                <div class="col">
+                    <div class="card text-center">
+                    <img class="card-img-top" src="images/tea1.jfif" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Traditional Tea</h5>
+                      <a href="traditional.html" class="btn btn-primary">See Selection</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-center" style="width: 18rem;">
-                <img class="card-img-top" src="images/boba1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Milk Tea</h5>
-                  <a href="milk.html" class="btn btn-primary">See Selection</a>
                 </div>
-            </div>
-            <div class="card text-center" style="width: 18rem;">
-                <img class="card-img-top" src="images/fruit1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Fruit Tea</h5>
-                  <a href="fruit.html" class="btn btn-primary">See Selection</a>
+                <div class="col">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="images/boba1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Milk Tea</h5>
+                      <a href="milk.html" class="btn btn-primary">See Selection</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-center" style="width: 18rem;">
+                </div>
+                <div class="col">
+                   <div class="card text-center" >
+                      <img class="card-img-top" src="images/fruit1.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Fruit Tea</h5>
+                        <a href="fruit.html" class="btn btn-primary">See Selection</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                   <div class="card text-center" >
                 <img class="card-img-top" src="images/dessert1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Dessert</h5>
                   <a href="dessert.html" class="btn btn-primary">See Selection</a>
                 </div>
             </div>
-        </section>
-        <!-- Make locations into accordian? -->
-        <section class="locations">
-            <h3> Locations </h3>
-            <div> <p>Charlottesville</p> </div>
-            <div> <p>Harrisonburg</p> </div>
-            <div> <p>Richmond</p> </div>
-            <div> <p>Williamsburg</p> </div>
-            <div> <p>Blacksburg</p> </div>
-            <div> <p>Virginia Beach</p> </div>
-            <div> <p>Fairfax</p> </div>
-            <div> <p>Leesburg</p> </div>
-            <div> <p>Arlington</p> </div>
+                </div>
+              </div>
+            </div>  
+        </section> 
+
+        <!-- Make locations into accordian? --> 
+        <section> 
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Charlottesville
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Charlottesville is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Harrisonburg
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Harrisonburg is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Richmond
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Richmond is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Williamsburg
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Williamsburg is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Blacksburg
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Blacksburg is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Virginia Beach
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Virginia Beach is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Fairfax
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Fairfax is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Leesburg
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Leesburg is a wow
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Arlington
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              Arlington is a wow
+              </div>
+            </div>
+          </div>  
+        </div>
+        </section> 
+
+        <section>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cat1.jpg" class="d-block w-100"  style="max-height: 90vh;" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/cat2.jpg" class="d-block w-100" style="max-height: 90vh;" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/cat3.jpg" class="d-block w-100" style="max-height: 90vh;" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </section>
 		<footer>
 			<nav class="navbar navbar-light bg-light justify-content-start">
@@ -103,4 +247,6 @@
 			<small>Copyright © 2021 Grant Dong and Hunter Vaccaro. All Rights Reserved</small>
 		</footer>
 	</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </html>
